@@ -273,7 +273,8 @@ class TekkenFighter {
     if (this.hp > 0) {
       console.log(this.name + " a survecu");
     } else {
-      console.log(this.name + "est mort");
+      buttonPlay.style.display = "none";
+      console.log("fin du combat " + FightersList3[0].name + " a gagné");
     }
   }
 }
@@ -433,9 +434,6 @@ buttonPlay.addEventListener("click", () => {
       FightersList3[0].checkWin();
       changePlayer();
     }
-  } else {
-    console.log("fin du ccombat " + FightersList3[0].name + "a gagné");
-    buttonPlay.style.display = "none";
   }
 });
 console.log(FightersList3);
