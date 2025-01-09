@@ -249,9 +249,12 @@ ul h1 {
   gap: 10px;
 }
 .select {
+  display: flex;
+  align-items: center;
   background-color: #3e3c41;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 5%;
   border: 2px solid rgb(240, 240, 240);
 }

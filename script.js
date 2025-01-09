@@ -1,6 +1,6 @@
 const FightersList = [
   {
-    name: "Ling Xiaoyu",
+    name: "Asuka Kazama",
     age: 16,
     size: 155,
     sexe: "Female",
@@ -9,8 +9,29 @@ const FightersList = [
     hp: 100,
     dmg: 13,
   },
+
+  {
+    name: "Azucena Milagro",
+    age: 21,
+    size: 180,
+    sexe: "Female",
+    style: "Kazama Style Martial Arts",
+    atkname: "Electric Wind Godfist",
+    hp: 120,
+    dmg: 18,
+  },
   {
     name: "Bryan Furry",
+    age: 21,
+    size: 180,
+    sexe: "Male",
+    style: "Kazama Style Martial Arts",
+    atkname: "Electric Wind Godfist",
+    hp: 120,
+    dmg: 18,
+  },
+  {
+    name: "Jack",
     age: 21,
     size: 180,
     sexe: "Male",
@@ -200,7 +221,7 @@ const FightersList = [
     dmg: 20,
   },
   {
-    name: "",
+    name: "Lili",
     age: 40,
     size: 175,
     sexe: "Male",
@@ -223,7 +244,7 @@ const FightersList = [
     name: "Zafina",
     age: 40,
     size: 175,
-    sexe: "Male",
+    sexe: "Female",
     style: "Five Animals Style",
     atkname: "Lei's Fury",
     hp: 130,
