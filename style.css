@@ -40,7 +40,7 @@ body {
   width: 60%;
 }
 .bg img {
-  width: 100%;
+  width: max-content;
   height: 100vh;
 }
 .menu {
@@ -76,10 +76,22 @@ body {
   transform: translateY(100%);
   transition: transform 2.5s ease;
 }
+.slideDown2 {
+  transform: translateY(1000%);
+  transition: 2.5s ease;
+}
+.slidePlayer {
+  transform: translateY(20%);
+  transition: 2.5s ease;
+}
+.slideName {
+  transform: translateY(50vh);
+  transition: 2.5s ease;
+}
 
 h1 {
   font-size: 3em;
-  text-shadow: 0 0 20px rgb(5, 145, 170);
+  text-shadow: 10px 10px 50px #ff002b;
 }
 ul {
   display: flex;
@@ -129,7 +141,7 @@ ul h1 {
   align-items: center;
   gap: 5px;
   height: 100vh;
-  background-image: url(assets/fond.png);
+  background-image: url(assets/Tekken-8-Second-Keyart-Horizontal-Without-Logo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -157,16 +169,23 @@ ul h1 {
   color: #fff;
   justify-content: center;
   width: 20%;
-  height: 20vh;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   font-size: 2em;
   letter-spacing: 0.1em;
 }
+.healthbar {
+  width: 20%;
+  height: 30px;
+  background-color: rgb(36, 190, 62);
+}
+.playerInfo {
+  display: flex;
+  flex-direction: column;
+}
 
 .vs {
   display: flex;
-  margin-top: -150px;
   width: 10%;
   height: 10vh;
   background-position: center;
@@ -174,18 +193,55 @@ ul h1 {
   background-size: contain;
 }
 
-.grille1 {
+.buttonPLay {
+  display: none;
   position: absolute;
-  bottom: 200px;
-  display: flex;
+  top: 500px;
+  display: none;
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: #60284d;
+  background-color: #ff356e79;
+  width: 120px;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 0px 20px 10px #ff356e80;
+  cursor: pointer;
+}
+.buttonPLay2 {
+  display: none;
+  align-items: center;
   justify-content: center;
-  height: 15vh;
-  width: 100%;
-  gap: 10px;
+  position: absolute;
+  top: 45vh;
+  font-size: 3em;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2523a55b;
+  width: 200px;
+  height: 130px;
+  padding: 30px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0px 0px 20px 30px #2523a55b;
+  cursor: pointer;
+}
+.buttonPlay:hover {
+  transition: 1.5s ease;
+  transform: scale(1.1);
+}
+.grille1 {
+  bottom: 200px;
 }
 .grille {
-  position: absolute;
   bottom: 45px;
+}
+.grille1,
+.grille {
+  position: absolute;
   display: flex;
   justify-content: center;
   height: 15vh;
@@ -207,10 +263,9 @@ ul h1 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0px 0px 20px 10px #0ff;
+  box-shadow: 0px 0px 20px 10px rgb(0, 110, 255);
   cursor: pointer;
 }
-
 .selectedPerso2:hover {
   transition: 0.2 ease;
   transform: scale(1.1);
@@ -221,7 +276,6 @@ ul h1 {
   box-shadow: 0px 0px 20px 10px tomato;
   cursor: pointer;
 }
-
 .noSelected:hover {
   transition: none;
   transform: none;
@@ -232,7 +286,6 @@ ul h1 {
   box-shadow: 0px 0px 0px 0px black;
   cursor: not-allowed;
 }
-
 #vsLogo {
   display: none;
   background-image: url("assets/vs.png");
@@ -240,11 +293,9 @@ ul h1 {
 .j1 {
   background-image: url("assets2/Asuka_Kazama.png");
 }
-
 .j2 {
   background-image: url("assets2/Azucena_Milagross_Ortiz.png");
 }
-
 .j3 {
   background-image: url("assets2/Bryan_Furry.png");
 }
@@ -254,13 +305,11 @@ ul h1 {
 .j4 {
   background-image: url("assets2/Jack.png");
 }
-
 .j5 {
   background-image: url("assets2/Jun_Kazama.png");
 }
-
 .j6 {
-  background-image: url("assets2/Lili_Tekken.png");
+  background-image: url("assets2/Lili.png");
 }
 .j7 {
   background-image: url("assets2/Kazuya_Mishima.png");
@@ -284,7 +333,7 @@ ul h1 {
   background-image: url("assets2/Leroy_Smith.png");
 }
 .j14 {
-  background-image: url("assets2/Lili_Tekken.png");
+  background-image: url("assets2/Lili.png");
 }
 .j15 {
   background-image: url("assets2/Marshal_Law.png");
