@@ -17,8 +17,8 @@ a::after {
   height: 5px;
   position: absolute;
   opacity: 0;
-  background-color: rgb(5, 145, 170, 0.5);
-  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ff002b6e;
+  transition: opacity 0.7s ease, box-shadow 0.7s ease;
 }
 a:hover::after {
   box-shadow: 0 0 8px 2px rgb(5, 145, 170, 0);
@@ -77,7 +77,7 @@ body {
   transition: transform 2.5s ease;
 }
 .slideDown2 {
-  transform: translateY(1000%);
+  transform: translateY(100vh);
   transition: 2.5s ease;
 }
 .slidePlayer {
@@ -201,7 +201,7 @@ ul h1 {
   font-size: 2em;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
-  color: #60284d;
+  color: white;
   background-color: #ff356e79;
   width: 120px;
   padding: 10px;
@@ -215,15 +215,15 @@ ul h1 {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 45vh;
+  top: 50%;
   font-size: 3em;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   color: #ffffff;
   background-color: #2523a55b;
-  width: 200px;
-  height: 130px;
-  padding: 30px;
+  width: 120px;
+  height: 35px;
+  padding: 10px;
   border-radius: 100px;
   border: none;
   box-shadow: 0px 0px 20px 30px #2523a55b;
@@ -264,7 +264,7 @@ ul h1 {
   transform: scale(1.2);
   background-color: #3e3c41;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   box-shadow: 0px 0px 20px 10px rgb(0, 110, 255);
   cursor: pointer;
@@ -274,7 +274,7 @@ ul h1 {
   transform: scale(1.1);
   background-color: #3e3c41;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   box-shadow: 0px 0px 20px 10px tomato;
   cursor: pointer;
@@ -284,7 +284,7 @@ ul h1 {
   transform: none;
   background-color: #3e3c41;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   box-shadow: 0px 0px 0px 0px black;
   cursor: not-allowed;
