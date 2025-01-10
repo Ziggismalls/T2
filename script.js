@@ -274,6 +274,7 @@ class TekkenFighter {
       console.log(this.name + " a survecu");
     } else {
       buttonPlay.style.display = "none";
+      /* Ajouter un Set timeout avec le gagnat ici */
       console.log("fin du combat " + FightersList3[0].name + " a gagné");
     }
   }
@@ -303,7 +304,6 @@ const FightersList2 = [];
 FightersList.forEach((f) => {
   FightersList2.push(new TekkenFighter(f.name, f.hp, f.dmg));
 });
-console.log(FightersList2);
 
 const FightersList3 = [];
 
@@ -355,7 +355,6 @@ select.forEach((s, i) => {
       setTimeout(() => {
         playButton.style.display = "flex";
       }, 2500);
-      console.log(vsLogo.style);
       currentPlayer++;
     }
     clicknumb++;
