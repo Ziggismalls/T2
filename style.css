@@ -73,7 +73,7 @@ p {
   letter-spacing: 0.4em;
   width: 200px;
   font-size: 10em;
-  color: #40090b;
+  color: white;
 }
 .slideLeft {
   transform: translateX(-100%);

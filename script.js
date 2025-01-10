@@ -271,7 +271,7 @@ class TekkenFighter {
   }
   checkWin() {
     if (this.hp > 0) {
-      console.log(this.name + " a survecu");
+      console.log(this.name + " a survecu " + this.hp + " hp restant");
     } else {
       buttonPlay.style.display = "none";
       setTimeout(() => {
@@ -288,6 +288,17 @@ function changePlayer() {
   } else {
     currentFighter = 1;
   }
+}
+
+function getName(name) {
+  return name
+    .replace(/url\(|\)/g, "")
+    .replace(/"/g, "")
+    .split("/")
+    .pop()
+    .split(".")
+    .shift()
+    .replace(/_/g, " ");
 }
 const winPop = document.getElementById("winPop");
 const select = document.querySelectorAll(".select");
@@ -318,18 +329,7 @@ select.forEach((s, i) => {
       player1.style.backgroundImage =
         styles.getPropertyValue("background-image");
       setTimeout(() => {
-        name1.innerHTML = player1.style.backgroundImage
-          .replace(/url\(|\)/g, "")
-          .replace(/"/g, "")
-          .split("/")
-          .pop()
-          .split(".")
-          .shift()
-          .toLowerCase()
-          .replace(/_/g, " ")
-          .replace(/\b\w/g, function (txt) {
-            return txt.toUpperCase();
-          });
+        name1.innerHTML = getName(player1.style.backgroundImage);
       }, 1000);
       FightersList3[0] = FightersList2[i];
       currentPlayer = 2;
@@ -337,18 +337,7 @@ select.forEach((s, i) => {
       player2.style.backgroundImage =
         styles.getPropertyValue("background-image");
       setTimeout(() => {
-        name2.innerHTML = player2.style.backgroundImage
-          .replace(/url\(|\)/g, "")
-          .replace(/"/g, "")
-          .split("/")
-          .pop()
-          .split(".")
-          .shift()
-          .toLowerCase()
-          .replace(/_/g, " ")
-          .replace(/\b\w/g, function (txt) {
-            return txt.toUpperCase();
-          });
+        name2.innerHTML = getName(player2.style.backgroundImage);
       }, 1000);
       FightersList3[1] = FightersList2[i];
       setTimeout(() => {
