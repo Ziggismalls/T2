@@ -65,14 +65,14 @@ body {
   height: 230px;
 }
 p {
-  display: flex;
+  display: none;
   font-weight: bolder;
   justify-content: center;
   position: absolute;
-  top: 250px;
+  top: 350px;
   letter-spacing: 0.4em;
   width: 200px;
-  font-size: 8em;
+  font-size: 10em;
   color: #40090b;
 }
 .slideLeft {

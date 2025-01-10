@@ -274,7 +274,9 @@ class TekkenFighter {
       console.log(this.name + " a survecu");
     } else {
       buttonPlay.style.display = "none";
-      /* Ajouter un Set timeout avec le gagnat ici */
+      setTimeout(() => {
+        winPop.style.display = "flex";
+      }, 2000);
       console.log("fin du combat " + FightersList3[0].name + " a gagné");
     }
   }
@@ -287,7 +289,7 @@ function changePlayer() {
     currentFighter = 1;
   }
 }
-
+const winPop = document.getElementById("winPop");
 const select = document.querySelectorAll(".select");
 const player1 = document.getElementById("player1");
 const player2 = document.getElementById("player2");
