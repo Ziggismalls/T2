@@ -319,10 +319,8 @@ FightersList.forEach((f) => {
 });
 
 const FightersList3 = [];
-
 select.forEach((s, i) => {
   s.addEventListener("click", () => changeplayer(currentPlayer));
-
   function changeplayer(player) {
     const styles = window.getComputedStyle(s);
     if (clicknumb <= 1) {
@@ -411,16 +409,10 @@ buttonPlay.addEventListener("click", () => {
   if (FightersList3[0].hp != 0 && FightersList3[1].hp != 0) {
     if (currentFighter === 1) {
       FightersList3[0].attaque(FightersList3[1]);
-
-      console.log(FightersList3[1].hp);
-
       FightersList3[1].checkWin();
       changePlayer();
     } else {
       FightersList3[1].attaque(FightersList3[0]);
-
-      console.log(FightersList3[0].hp);
-
       FightersList3[0].checkWin();
       changePlayer();
     }
