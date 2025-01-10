@@ -11,7 +11,7 @@ const FightersList = [
   },
 
   {
-    name: "Azucena Milagro",
+    name: "Azucena Ortiz",
     age: 21,
     size: 180,
     sexe: "Female",
